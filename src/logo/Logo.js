@@ -11,12 +11,11 @@ const Logo = () => {
     const logos = [logo1, logo2, logo3];
 
     useEffect(() => {
-        const timer = setInterval(() => {
+        setInterval(() => {
             const min = 0;
             const max = 3;
             const rand = Math.trunc(min + Math.random() * (max - min));
-            console.log(rand);
-            setLogo(logos[rand]);
+             setLogo(logos[rand]);
         }, 2000);
     }, []);
 
